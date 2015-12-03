@@ -5,6 +5,8 @@
 ;; I'd probably put in a default that you want, as opposed to nil
 (defvar ometa-tab-width nil "Width of a tab for MYDSL mode")
 
+(provide 'ometa-mode)
+
 (define-derived-mode ometa-mode javascript-mode
   "OMeta"
   "OMeta is a derived mode from Javascript to edit OMeta files"
@@ -16,4 +18,6 @@
   ;;A gnu-correct program will have some sort of hook call here.
   )
 
-(provide 'ometa-mode)
+
+(add-to-list 'auto-mode-alist '("\\.ometa$" . ometa-mode))
+(add-to-list 'file-coding-system-alist '("\\.ometa$" . utf-8))
