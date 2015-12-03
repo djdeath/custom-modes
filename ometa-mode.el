@@ -1,6 +1,6 @@
 (defvar ometa-keywords
   '(("ometa" . font-lock-keyword-face)
-    ("#[a-zA-Z_\$][a-zA-Z0-9_\$]+" . font-lock-string-face)))
+    ("[#`][a-zA-Z_\$][a-zA-Z0-9_\$]+" . font-lock-string-face)))
 
 ;; I'd probably put in a default that you want, as opposed to nil
 (defvar ometa-tab-width nil "Width of a tab for MYDSL mode")
