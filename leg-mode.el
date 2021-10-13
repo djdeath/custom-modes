@@ -34,6 +34,10 @@
   (funcall 'c-mode)
   (unless (assq 'leg-mode-timer minor-mode-alist)
     (setq minor-mode-alist (cons '(leg-mode-timer " LEG") minor-mode-alist)))
+  (setq parse-sexp-ignore-comments t
+        comment-start-skip "#[ \t]*"
+	comment-start "# "
+        comment-end "")
   (leg-mode-changed))
 
 (provide 'leg-mode)

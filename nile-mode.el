@@ -28,7 +28,7 @@
                 "∧" "∨"
                 "×" "⊗" "∙" "√"
                 "‖"
-                "~"
+                "~" "≈" "≉"
                 "+" "-" "/" "%")))
 
 (defvar nile-type-regexp
@@ -86,6 +86,7 @@
     ;; Special characters
     (nile-keymap "a" "∀")
     (nile-keymap "c" "⊗")
+    (nile-keymap "r" "≈")
     (nile-keymap-and-back "s" "√()")
     (nile-keymap-and-back "d" "‖‖")
 
