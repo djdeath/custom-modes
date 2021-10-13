@@ -3,7 +3,7 @@
 ;; ===================================================================
 ;; Fichier ~/.emacs (fichier de configuration d'Emacs)
 ;; Sébastien Dinot <sebastien.dinot@free.fr>
-;; Time-stamp: <2021-07-22 22:56:08>
+;; Time-stamp: <2021-10-13 16:25:42>
 ;; ===================================================================
 ;;
 ;; ===================================================================
@@ -529,7 +529,7 @@
 (add-hook 'ctypes-load-hook 'my-ctypes-load-hook)
 
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/lisp"))
-(add-to-list 'load-path (expand-file-name "~/src/emacs-modes/custom-modes"))
+(add-to-list 'load-path (expand-file-name "~/src/custom-modes"))
 
 
 ;; cscope
