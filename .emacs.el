@@ -3,7 +3,7 @@
 ;; ===================================================================
 ;; Fichier ~/.emacs (fichier de configuration d'Emacs)
 ;; Sébastien Dinot <sebastien.dinot@free.fr>
-;; Time-stamp: <2021-10-13 16:25:42>
+;; Time-stamp: <2026-10-08 11:26:39>
 ;; ===================================================================
 ;;
 ;; ===================================================================
@@ -393,6 +393,11 @@
 ;; La séquence « C-c S-t » insère l'horodate
 (global-set-key [(control c) (shift t)] 'insert-text-time-string)
 
+
+(defun kill-this-buffer ()
+  "Kill the current buffer."
+  (interactive)
+  (kill-buffer (current-buffer)))
 
 ;; Surcharge de la séquence « C-x k ». Au lieu de demander le nom du
 ;; tampon à détruire, elle détruit systématiquement le tampon courant.
